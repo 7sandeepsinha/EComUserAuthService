@@ -1,0 +1,10 @@
+1. Headers
+2. Sessions
+3. Full implementation with security
+
+Pending -
+1. Integration using RestTemplate
+ProductService with UserService - 30 mins
+
+Stretch Goal -
+1. Google OAuth2 signin integration
