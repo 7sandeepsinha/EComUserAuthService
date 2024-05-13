@@ -14,6 +14,7 @@ public class UserResponseDTO {
     private String name;
     private String email;
     private List<RoleResponseDTO> roles;
+    private String token;
 
     public static UserResponseDTO from(User user){
         if(user == null)
@@ -21,6 +22,7 @@ public class UserResponseDTO {
         UserResponseDTO userResponseDTO = new UserResponseDTO();
         userResponseDTO.name = user.getName();
         userResponseDTO.email = user.getEmailId();
+        userResponseDTO.token = user.getToken();
         userResponseDTO.roles = new ArrayList<>();
         //convert it to lambda stream
         for(Role role : user.getRoles()){

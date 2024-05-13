@@ -8,3 +8,11 @@ ProductService with UserService - 30 mins
 
 Stretch Goal -
 1. Google OAuth2 signin integration
+
+
+
+ToDo
+1. Integrate header in some APIs of ProductService
+2. Pass the token that we got after logging in User Service
+3. Create UserService client, similar to fakeStoreClient
+4. In service layer before executing any method, validate the token then process
